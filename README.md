@@ -86,19 +86,19 @@ The given figure (in the next page) shows a high-level overview of the architect
 
 Bitcoin, Ethereum, Hyperledger, etc are some of the blockchain platforms that have been developed over the years. We will use Hyperledger Fabric to implement our solution which is a permissioned and closed blockchain, no person can get added to the network unlike permissionless blockchains such as bitcoin, and Ethereum. This solves the confidentiality problem of patients’ data.  The fabric has a common Certificate Authority (Fabric CA) for every organization and MSP which provides identities and verifies when a transaction request is made.  Moreover, all the components of the fabric network are scalable and pluggable. It means more organizations can be added to any channel. The initial organizations who have the control of channel configurations decide whether a new organization should be added to the channel or not. Like Ethereum, the fabric also provides the concept of smart contracts, and when it is packaged and deployed it is called Chaincode. Chaincode is a business logic that is deployed on every endorsing peer.
 
-![](https://ibb.co/jybsx1t)
+![](https://i.ibb.co/K2bSQ3n/Architecture.jpg)
 
 ### Integration with legacy process and systems
 
 Currently, most hospitals and medical organizations have their own electrical health record system to manage medical records and other patient-related information. But this EHR is not shared among the organization. All the hospitals and diagnostic centers will enroll as an organization in the fabric network. Patient data i.e prescription, payslip, test-report data, etc. will be the assets that will be stored in the ledger. As a result, any doctor can view patient medical history when a patient grants access to his medical data to the doctor. A patient can update his personal data but can’t update any medical data. Fabric network includes law enforcement agencies for shared data history. It will help detect mistreatment/patient negligence.
 
-### Tokenization![](https://ibb.co/HgJxkPg)
+### Tokenization![](https://i.ibb.co/zfk702f/Tokenization.jpg)
 
 The tokenization concept is taken from ‘Blockchain: Securing a new health interoperability experience’ (2016), which was presented and discusses how blockchain technology could assist patient health care data interoperability 
 
 ### Web clients
 
-![](https://ibb.co/w60KXFM)
+![](https://i.ibb.co/DKV7yH5/Use-Case.jpg)
 
 - Hospital/Diagnostic center admin dashboard(requires login): can register doctors and patients by verifying their identity using porichoy API, view patient data with minimal information, appoint a doctor to the patient, and add payment slips for patients.
 
@@ -154,7 +154,7 @@ The target market for the inclusion of this project is primarily the patients. H
 
 ## Partner
 
-![](https://ibb.co/WpZf1wB)
+![](https://i.ibb.co/VpRT8ZM/Block-Chain-partners-01.png)
 
 ## Competition
 
@@ -186,7 +186,7 @@ The fundamental idea behind our project is that the Medical history of patients 
 
 ## Appendix
 
-1. [1-min Introduction](https://drive.google.com/file/d/1ahVGvjUEMV1rpmLTiUwPRtW6mfs0bE7L/view?usp=sharing)
+1. [1-min Intro](https://drive.google.com/file/d/1ahVGvjUEMV1rpmLTiUwPRtW6mfs0bE7L/view?usp=sharing)
 
 2. [10-min presentation](https://drive.google.com/file/d/1DXyQoSUL2cjxJX3koqNMT78xhx3j8qSZ/view?usp=sharing)
 
@@ -200,7 +200,7 @@ The fundamental idea behind our project is that the Medical history of patients 
 
 ## Team Members
 
-![](https://ibb.co/7rP6wYX)
+![](https://i.ibb.co/HG6kWFV/image.png)
 
 
 
