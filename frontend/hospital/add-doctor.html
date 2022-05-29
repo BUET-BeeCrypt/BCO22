@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="author" content="MJKSabit">
+    <title>Spondon - Admin</title>
+    <link rel="apple-touch-icon" href="../assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/css/tables/datatable/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/css/charts/apexcharts.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/css/charts/leaflet.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/components.css">
+    <!-- END: Theme CSS-->
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/core/menu/menu-types/vertical-menu-modern.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/pages/crypto-trading.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/css/cryptocoins/cryptocoins.css">
+    
+    <link rel="stylesheet" type="text/css" href="../assets/css/core/menu/menu-types/vertical-menu-modern.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/plugins/forms/wizard.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/plugins/pickers/daterange/daterange.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern 2-columns   fixed-navbar" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-dark navbar-shadow">
+        <div class="navbar-wrapper">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="nav-item mobile-menu d-lg-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu font-large-1"></i></a></li>
+                    <li class="nav-item mr-auto"><a class="navbar-brand" href="index.html"><img class="brand-logo" alt="modern admin logo" src="../assets/images/logo/logo.png">
+                            <h3 class="brand-text">Spondon</h3>
+                        </a></li>
+                    <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="toggle-icon ft-toggle-right font-medium-3 white" data-ticon="ft-toggle-right"></i></a></li>
+                    <li class="nav-item d-lg-none"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="la la-ellipsis-v"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-container content">
+                <div class="collapse navbar-collapse" id="navbar-mobile">
+                    <ul class="nav navbar-nav mr-auto float-left">
+                        <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand" href="#"><i class="ficon ft-maximize"></i></a></li>
+                        <li class="nav-item nav-search"><a class="nav-link nav-link-search" href="#"><i class="ficon ft-search"></i></a>
+                            <div class="search-input">
+                                <input class="input" type="text" placeholder="Explore Spondon..." tabindex="0" data-search="template-list">
+                                <div class="search-input-close"><i class="ft-x"></i></div>
+                                <ul class="search-list"></ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-gb"></i><span class="selected-language"></span></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-gb"></i> English UK</a><a class="dropdown-item" href="#" data-language="fr"><i class="flag-icon flag-icon-bd"></i> বাংলা</a></div>
+                        </li>
+                        <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-bell"></i><span class="badge badge-pill badge-danger badge-up badge-glow">5</span></a>
+                            <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                <li class="dropdown-menu-header">
+                                    <h6 class="dropdown-header m-0"><span class="grey darken-2">Notifications</span></h6><span class="notification-tag badge badge-danger float-right m-0">5 New</span>
+                                </li>
+                                <li class="scrollable-container media-list w-100"><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i class="ft-plus-square icon-bg-circle bg-cyan mr-0"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">New doucument request</h6>
+                                                <p class="notification-text font-small-3 text-muted">Square LLC has entered a doucument of you</p><small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">30 minutes ago</time></small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i class="ft-plus-square icon-bg-circle bg-cyan mr-0"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">New doucument request</h6>
+                                                <p class="notification-text font-small-3 text-muted">Square LLC has entered a doucument of you</p><small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">40 minutes ago</time></small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i class="ft-plus-square icon-bg-circle bg-cyan mr-0"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">New doucument request</h6>
+                                                <p class="notification-text font-small-3 text-muted">Square LLC has entered a doucument of you</p><small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">50 minutes ago</time></small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i class="ft-plus-square icon-bg-circle bg-cyan mr-0"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">New doucument request</h6>
+                                                <p class="notification-text font-small-3 text-muted">Square LLC has entered a doucument of you</p><small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">One hour ago</time></small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i class="ft-plus-square icon-bg-circle bg-cyan mr-0"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">New doucument request</h6>
+                                                <p class="notification-text font-small-3 text-muted">Square LLC has entered a doucument of you</p><small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Yesterday</time></small>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li class="dropdown-menu-footer"><a class="dropdown-item text-muted text-center" href="javascript:void(0)">Read all notifications</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="mr-1 user-name text-bold-700">Square Hospital Ltd.</span><span class="avatar avatar-online"><img src="http://www.e-home2u.com/images/square_banner.jpg" alt="avatar"><i></i></span></a>
+                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#"><i class="ft-user"></i> Profile</a><a class="dropdown-item" href="#"><i class="ft-settings"></i> Settings</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="../login.html"><i class="ft-power"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+
+    <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item"><a href="./index.html"><i class="la la-home"></i><span class="menu-title" data-i18n="Crypto Dashboard">Home</span></a>
+                </li>
+                <!-- <li class=" nav-item"><a href="./my-doc.html"><i class="la la-file"></i><span class="menu-title" data-i18n="Crypto Dashboard">My Documents</span></a>
+                </li> -->
+                <li class=" navigation-header"><span data-i18n="Crypto">Actions</span><i class="la la-ellipsis-h" data-toggle="tooltip" data-placement="right" data-original-title="Crypto"></i>
+                </li>
+                <li class="active"><a href="./add-doctor.html"><i class="la la-plus-square"></i><span class="menu-title" data-i18n="Trading">Add Doctor</span></a>
+                </li>
+                
+                <li class="nav-item"><a href="./issued.html"><i class="la la-exchange"></i><span class="menu-title" data-i18n="Trading">Issued Document</span></a>
+                </li>
+
+                <!-- <li class="active"><a href="./list.html"><i class="la la-list"></i><span class="menu-title" data-i18n="Transactions">Shared Collections</span></a>
+                </li> -->
+                <li class=" navigation-header"><span data-i18n="Crypto">Profile</span><i class="la la-ellipsis-h" data-toggle="tooltip" data-placement="right" data-original-title="Crypto"></i>
+                </li>
+                <li class=" nav-item"><a href="./settings.html"><i class="la la-cog"></i><span class="menu-title" data-i18n="History">Settings</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- END: Main Menu-->
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-6 col-12 mb-2 breadcrumb-new">
+                    <h3 class="content-header-title mb-0 d-inline-block">Add a new Hospital</h3>
+                    <!-- <div class="row breadcrumbs-top d-inline-block">
+                        <div class="breadcrumb-wrapper col-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                </li>
+                                <li class="breadcrumb-item active">Admin
+                                </li>
+                            </ol>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="content-header-right col-md-6 col-12">
+                    <div class="btn-group float-md-right">
+                        <button class="btn btn-info dropdown-toggle mb-1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
+                        <div class="dropdown-menu arrow"><a class="dropdown-item" href="#"><i class="fa fa-calendar-check mr-1"></i> Raw Data</a><a class="dropdown-item" href="#"><i class="fa fa-cart-plus mr-1"></i> Export</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fa fa-cog mr-1"></i> Settings</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <section id="number-tabs">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">New Doctor</h4>
+                                    <a class="heading-elements-toggle"><i class="la la-ellipsis-h font-medium-3"></i></a>
+                                    <div class="heading-elements">
+                                        <ul class="list-inline mb-0">
+                                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                            <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-content collapse show">
+                                    <div class="card-body">
+                                        <form action="#" class="number-tab-steps wizard-circle">
+
+                                            <!-- Step 1 -->
+                                            <h6>Step 1</h6>
+                                            <fieldset>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="firstName1">Name :</label>
+                                                            <input type="text" class="form-control" id="firstName1">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="lastName1">Passing Year :</label>
+                                                            <input type="text" class="form-control" id="lastName1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="emailAddress1">Licence No :</label>
+                                                            <input type="email" class="form-control" id="emailAddress1">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="location1">Select Passing College :</label>
+                                                            <select class="custom-select form-control" id="location1" name="location">
+                                                                <option value="">Select Passing College</option>
+                                                                <option value="Amsterdam">Dhaka Medical College</option>
+                                                                <option value="Berlin">Chittagong Medical College</option>
+                                                                <option value="Frankfurt">Barshal</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="phoneNumber1">Phone Number :</label>
+                                                            <input type="tel" class="form-control" id="phoneNumber1">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="date1">Date of Birth :</label>
+                                                            <input type="date" class="form-control" id="date1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+
+                                            <!-- Step 2 -->
+                                            <h6>Step 2</h6>
+                                            <fieldset>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="proposalTitle1">Company Trade Licence :</label>
+                                                            <input type="text" class="form-control" id="proposalTitle1">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="emailAddress2">Bank Account :</label>
+                                                            <input type="email" class="form-control" id="emailAddress2">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="videoUrl1">Website :</label>
+                                                            <input type="url" class="form-control" id="videoUrl1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="jobTitle1">Documents :</label>
+                                                            <input type="text" class="form-control" id="jobTitle1">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="shortDescription1">Short Description :</label>
+                                                            <textarea name="shortDescription" id="shortDescription1" rows="4" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+
+                                            <!-- Step 3 -->
+                                            <h6>Step 3</h6>
+                                            <fieldset>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="eventName1">Event Name :</label>
+                                                            <input type="text" class="form-control" id="eventName1">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="eventType1">Event Type :</label>
+                                                            <select class="custom-select form-control" id="eventType1" data-placeholder="Type to search cities" name="eventType1">
+                                                                <option value="Banquet">Banquet</option>
+                                                                <option value="Fund Raiser">Fund Raiser</option>
+                                                                <option value="Dinner Party">Dinner Party</option>
+                                                                <option value="Wedding">Wedding</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="eventLocation1">Event Location :</label>
+                                                            <select class="custom-select form-control" id="eventLocation1" name="location">
+                                                                <option value="">Select City</option>
+                                                                <option value="Amsterdam">Amsterdam</option>
+                                                                <option value="Berlin">Berlin</option>
+                                                                <option value="Frankfurt">Frankfurt</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="jobTitle2">Event Date - Time :</label>
+                                                            <div class='input-group'>
+                                                                <input type='text' class="form-control datetime" id="jobTitle2" />
+                                                                <span class="input-group-addon">
+                                                                    <span class="ft-calendar"></span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="eventStatus1">Event Status :</label>
+                                                            <select class="custom-select form-control" id="eventStatus1" name="eventStatus">
+                                                                <option value="Planning">Planning</option>
+                                                                <option value="In Progress">In Progress</option>
+                                                                <option value="Finished">Finished</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Requirements :</label>
+                                                            <div class="c-inputs-stacked">
+                                                                <div class="d-inline-block custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="status1" class="custom-control-input" id="staffing1">
+                                                                    <label class="custom-control-label" for="staffing1">Staffing</label>
+                                                                </div>
+                                                                <div class="d-inline-block custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="status1" class="custom-control-input" id="catering1">
+                                                                    <label class="custom-control-label" for="catering1">Catering</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+
+                                            <!-- Step 4 -->
+                                            <h6>Step 4</h6>
+                                            <fieldset>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="meetingName1">Name of Meeting :</label>
+                                                            <input type="text" class="form-control" id="meetingName1">
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="meetingLocation1">Location :</label>
+                                                            <input type="text" class="form-control" id="meetingLocation1">
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="participants1">Names of Participants</label>
+                                                            <textarea name="participants" id="participants1" rows="4" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="decisions1">Decisions Reached</label>
+                                                            <textarea name="decisions" id="decisions1" rows="4" class="form-control"></textarea>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Agenda Items :</label>
+                                                            <div class="c-inputs-stacked">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="agenda1" class="custom-control-input" id="item11">
+                                                                    <label class="custom-control-label" for="item11">1st item</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="agenda1" class="custom-control-input" id="item12">
+                                                                    <label class="custom-control-label" for="item12">2nd item</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="agenda1" class="custom-control-input" id="item13">
+                                                                    <label class="custom-control-label" for="item13">3rd item</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="agenda1" class="custom-control-input" id="item14">
+                                                                    <label class="custom-control-label" for="item14">4th item</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" name="agenda1" class="custom-control-input" id="item15">
+                                                                    <label class="custom-control-label" for="item15">5th item</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light navbar-border navbar-shadow">
+        <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span class="float-md-left d-block d-md-inline-block">Copyright &copy; 2022 <a class="text-bold-800 grey darken-2" href="https://www.github.com/MJKSabit" target="_blank">Spondon</a></span><span class="float-md-right d-none d-lg-block">Hand-crafted & Made with<i class="ft-heart pink"></i><span id="scroll-top"></span></span></p>
+    </footer>
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../assets/vendors/js/tables/datatable/datatables.min.js"></script>
+    <script src="../assets/vendors/js/charts/apexcharts/apexcharts.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../assets/vendors/js/extensions/jquery.steps.min.js"></script>
+    <script src="../assets/vendors/js/pickers/dateTime/moment-with-locales.min.js"></script>
+    <script src="../assets/vendors/js/pickers/daterange/daterangepicker.js"></script>
+    <script src="../assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
+    <script src="../assets/data/leaflet/us-states.json"></script>
+    <script src="../assets/vendors/js/charts/leaflet/leaflet.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../assets/js/core/app-menu.js"></script>
+    <script src="../assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- SABIT -->
+    <script src="https://unpkg.com/d3@5.9.2/dist/d3.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+
+    <!-- BEGIN: Page JS-->
+    <!-- BEGIN: Page JS-->
+    <script src="../assets/js/scripts/forms/wizard-steps.js"></script>
+    <!-- <script src="../assets/js/scripts/charts/leaflet/maps-leaflet.js"></script> -->
+    <!-- END: Page JS-->
+    <!-- END: Page JS-->
+
+</body>
+<!-- END: Body-->
+
+</html>

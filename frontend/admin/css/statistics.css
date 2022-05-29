@@ -1,0 +1,18 @@
+path#map-svg {
+    fill: #68BB59;
+    stroke: #ccc;
+    stroke-width: 0.1px;
+  }
+  
+.district:hover {
+stroke-width: 1.4px;
+stroke: #398AD7;
+    cursor: pointer;
+}
+
+.tips{
+border: 1px solid tomato;
+opacity: 0.3;
+    fill: blue;
+font-size: .5em;
+}

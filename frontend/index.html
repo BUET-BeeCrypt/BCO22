@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="author" content="MJKSabit">
+    <title>Spondon - User</title>
+    <link rel="apple-touch-icon" href="./assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/vendors/css/tables/datatable/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/vendors/css/charts/apexcharts.css">
+    <link rel="stylesheet" type="text/css" href="./assets/vendors/css/calendars/fullcalendar.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/vendors/css/calendars/daygrid.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/vendors/css/calendars/timegrid.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/vendors/css/forms/selects/select2.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/components.css">
+    <!-- END: Theme CSS-->
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/core/menu/menu-types/vertical-menu-modern.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/pages/crypto-trading.css">
+    <link rel="stylesheet" type="text/css" href="./assets/vendors/css/cryptocoins/cryptocoins.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/plugins/calendars/fullcalendar.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/plugins/file-uploaders/dropzone.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/pages/dropzone.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/plugins/images/cropper/cropper.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/plugins/forms/extended/form-extended.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/plugins/loaders/loaders.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/core/colors/palette-loader.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <style>
+        img.basic-cropper {
+            display: block;
+
+            /* This rule is very important, please don't ignore this */
+            max-width: 100%;
+        }
+    </style>
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern 2-columns   fixed-navbar" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-dark navbar-shadow">
+        <div class="navbar-wrapper">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="nav-item mobile-menu d-lg-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu font-large-1"></i></a></li>
+                    <li class="nav-item mr-auto"><a class="navbar-brand" href="index.html"><img class="brand-logo" alt="modern admin logo" src="./assets/images/logo/logo.png">
+                            <h3 class="brand-text">Spondon</h3>
+                        </a></li>
+                    <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="toggle-icon ft-toggle-right font-medium-3 white" data-ticon="ft-toggle-right"></i></a></li>
+                    <li class="nav-item d-lg-none"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="la la-ellipsis-v"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-container content">
+                <div class="collapse navbar-collapse" id="navbar-mobile">
+                    <ul class="nav navbar-nav mr-auto float-left">
+                        <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand" href="#"><i class="ficon ft-maximize"></i></a></li>
+                        <li class="nav-item nav-search"><a class="nav-link nav-link-search" href="#"><i class="ficon ft-search"></i></a>
+                            <div class="search-input">
+                                <input class="input" type="text" placeholder="Explore Spondon..." tabindex="0" data-search="template-list">
+                                <div class="search-input-close"><i class="ft-x"></i></div>
+                                <ul class="search-list"></ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-gb"></i><span class="selected-language"></span></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-gb"></i> English UK</a><a class="dropdown-item" href="#" data-language="fr"><i class="flag-icon flag-icon-bd"></i> বাংলা</a></div>
+                        </li>
+                        <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="./login.html" data-toggle="dropdown"><span class="mr-1 user-name text-bold-700">Log In</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+
+    <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" active"><a href="./index.html"><i class="la la-home"></i><span class="menu-title" data-i18n="Crypto Dashboard">Verify Document</span></a>
+                </li>
+                <!-- <li class=" nav-item"><a href="./my-doc.html"><i class="la la-file"></i><span class="menu-title" data-i18n="Crypto Dashboard">My Documents</span></a>
+                </li> -->
+                <li class=" navigation-header"><span data-i18n="Crypto">Authentication</span><i class="la la-ellipsis-h" data-toggle="tooltip" data-placement="right" data-original-title="Crypto"></i>
+                </li>
+                <li class="nav-item"><a href="./login.html"><i class="la la-sign-in"></i><span class="menu-title" data-i18n="Trading">Log in</span></a>
+                </li>
+                
+                <li class="nav-item"><a href="./register.html"><i class="la la-pencil"></i><span class="menu-title" data-i18n="Trading">Register</span></a>
+                </li>
+
+                <!-- <li class="active"><a href="./list.html"><i class="la la-list"></i><span class="menu-title" data-i18n="Transactions">Shared Collections</span></a>
+                </li> -->
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- END: Main Menu-->
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-6 col-12 mb-2 breadcrumb-new">
+                    <h3 class="content-header-title mb-0 d-inline-block">Verify Medical Document</h3>
+                    <!-- <div class="row breadcrumbs-top d-inline-block">
+                        <div class="breadcrumb-wrapper col-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                </li>
+                                <li class="breadcrumb-item active">Admin
+                                </li>
+                            </ol>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="content-header-right col-md-6 col-12">
+                    <div class="btn-group float-md-right">
+                        <button class="btn btn-info dropdown-toggle mb-1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
+                        <div class="dropdown-menu arrow"><a class="dropdown-item" href="#"><i class="fa fa-calendar-check mr-1"></i> Raw Data</a><a class="dropdown-item" href="#"><i class="fa fa-cart-plus mr-1"></i> Export</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fa fa-cog mr-1"></i> Settings</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <section id="dropzone-examples">
+                    <div class="row">
+                        <div class="col-12" id="file-upload-dropzone">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Select Files to Upload</h4>
+                                    <a class="heading-elements-toggle"><i class="la la-ellipsis-h font-medium-3"></i></a>
+                                    <div class="heading-elements">
+                                        <ul class="list-inline mb-0">
+                                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-content collapse show">
+                                    <div class="card-body" style="cursor: pointer;">
+                                        <!-- <p class="card-text">This example uploads a multiple files using dropzone js library. Using this method, user gets an option to select the files using a button instead dropping all the files after selected from the folders. You have to define <code>dropzone</code> and <code>previewsContainer</code> elements to show preview thumbnails. Also set <code>clickable</code> to match the button's id for button to work as file selector.</p> -->
+                                        <!-- <button id="select-files" class="btn btn-primary mb-1"><i class="ft-file"></i> Click Here to Select Files</button> -->
+                                        <form action="#" class="dropzone dropzone-area" id="dp-accept-files">
+                                            <div class="dz-message">Drop Files Here To Upload</div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 hide-before-upload d-none">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Document Verfification</h4>
+                                    <a class="heading-elements-toggle"><i class="la la-ellipsis-h font-medium-3"></i></a>
+                                    <div class="heading-elements">
+                                        <ul class="list-inline mb-0">
+                                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-content collapse show">
+                                    <div class="mt-4 mb-4 text-center">
+                                        <div class="show-at-first">
+                                            <div class="loader-wrapper">
+                                                <div class="loader-container">
+                                                    <div class="folding-cube loader-primary">
+                                                        <div class="cube1 cube"></div>
+                                                        <div class="cube2 cube"></div>
+                                                        <div class="cube4 cube"></div>
+                                                        <div class="cube3 cube"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-bold-500 primary text-center">
+                                                Verifying Document ...
+                                            </h1>
+                                        </div>
+        
+                                        <div class="hidden " id="partially-shared">
+                                            <div class="text-center">
+                                                <img src="./assets/images/verified.jpg" class="rounded" alt="..." style="max-height: 100px;">
+                                            </div>
+                                            <h1 class="text-bold-500 success text-center">
+                                                Document is Valid & Verfied
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light navbar-border navbar-shadow">
+        <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span class="float-md-left d-block d-md-inline-block">Copyright &copy; 2022 <a class="text-bold-800 grey darken-2" href="https://www.github.com/MJKSabit" target="_blank">Spondon</a></span><span class="float-md-right d-none d-lg-block">Hand-crafted & Made with<i class="ft-heart pink"></i><span id="scroll-top"></span></span></p>
+    </footer>
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="./assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="./assets/vendors/js/tables/datatable/datatables.min.js"></script>
+    <script src="./assets/vendors/js/charts/apexcharts/apexcharts.min.js"></script>
+    <script src="./assets/vendors/js/extensions/moment.min.js"></script>
+    <script src="./assets/vendors/js/extensions/fullcalendar.min.js"></script>
+    <script src="./assets/vendors/js/extensions/daygrid.min.js"></script>
+    <script src="./assets/vendors/js/extensions/timegrid.min.js"></script>
+    <script src="./assets/vendors/js/extensions/interactions.min.js"></script>
+    <script src="./assets/vendors/js/extensions/dropzone.min.js"></script>
+    <script src="./assets/vendors/js/ui/prism.min.js"></script>
+    <script src="./assets/vendors/js/extensions/cropper.min.js"></script>
+    <script src="./assets/vendors/js/forms/extended/typeahead/typeahead.bundle.min.js"></script>
+    <script src="./assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="./assets/js/core/app-menu.js"></script>
+    <script src="./assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- SABIT -->
+    <script src="https://unpkg.com/d3@5.9.2/dist/d3.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+
+    <!-- BEGIN: Page JS-->
+    <!-- <script src="./assets/js/scripts/extensions/dropzone.js"></script> -->
+    <script>
+        Dropzone.options.dpAcceptFiles = {
+            paramName: "file", // The name that will be used to transfer the file
+            maxFilesize: 50, // MB
+            acceptedFiles: 'image/*, application/pdf',
+            autoProcessQueue: false,
+            init: function() {
+                this.on("thumbnail", (file, dataURL) => {
+                    $('#file-upload-dropzone').addClass('d-none');
+                    $('.hide-before-upload').removeClass('d-none');
+                    $('#partially-shared').addClass('hidden');
+                    $('.show-at-first').removeClass('hidden');
+                    setTimeout(() => {
+                        $('.show-at-first').addClass('hidden');
+                        $('#partially-shared').removeClass('hidden');
+                    }, 3000)
+                });
+            }
+        }
+    </script>
+    <!-- END: Page JS-->
+
+</body>
+<!-- END: Body-->
+
+</html>
