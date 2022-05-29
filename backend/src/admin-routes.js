@@ -5,7 +5,7 @@
 
 // Bring common classes into scope, and Fabric SDK network class
 const {ROLE_ADMIN, ROLE_DOCTOR, capitalize, getMessage, validateRole, createRedisClient} = require('../utils.js');
-const network = require('../../medidapp/application-javascript/app.js');
+const network = require('../../fabric/medidapp/application-javascript/app.js');
 
 /**
  * @param  {Request} req Body must be a patient json and role in the header

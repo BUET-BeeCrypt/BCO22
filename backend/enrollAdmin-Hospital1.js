@@ -6,13 +6,13 @@
 const {Wallets} = require('fabric-network');
 const FabricCAServices = require('fabric-ca-client');
 const path = require('path');
-const {buildCAClient, enrollAdmin} = require('../medidapp/application-javascript/CAUtil.js');
-const {buildCCPHosp1, buildWallet} = require('../medidapp/application-javascript/AppUtil.js');
+const {buildCAClient, enrollAdmin} = require('../fabric/medidapp/application-javascript/CAUtil.js');
+const {buildCCPHosp1, buildWallet} = require('../fabric/medidapp/application-javascript/AppUtil.js');
 const adminHospital1 = "admin"//'hosp1admin';
 const adminHospital1Passwd = "adminpw";//'hosp1lithium';
 
 const mspHosp1 = 'Org1MSP';//'hosp1MSP';
-const walletPath = path.join(__dirname, '../medidapp/application-javascript/wallet');
+const walletPath = path.join(__dirname, '../fabric/medidapp/application-javascript/wallet');
 
 // Temporary DB
 // const {addUser} = require('./Hosp1LocalDB.js');

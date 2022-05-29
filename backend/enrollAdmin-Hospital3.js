@@ -6,13 +6,13 @@
 const {Wallets} = require('fabric-network');
 const FabricCAServices = require('fabric-ca-client');
 const path = require('path');
-const {buildCAClient, enrollAdmin} = require('../medidapp/application-javascript/CAUtil.js');
-const {buildWallet, buildCCPHosp3} = require('../medidapp/application-javascript/AppUtil.js');
+const {buildCAClient, enrollAdmin} = require('../fabric/medidapp/application-javascript/CAUtil.js');
+const {buildWallet, buildCCPHosp3} = require('../fabric/medidapp/application-javascript/AppUtil.js');
 const adminHospital3 = 'hosp3admin';
 const adminHospital3Passwd = 'hosp3admin';
 
 const mspHosp3 = 'hosp3MSP';
-const walletPath = path.join(__dirname, '../medidapp/application-javascript/wallet');
+const walletPath = path.join(__dirname, '../fabric/medidapp/application-javascript/wallet');
 
 /**
   * @description This functions enrolls the admin of Hospital 3

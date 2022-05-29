@@ -4,7 +4,7 @@
 
 // Bring common classes into scope, and Fabric SDK network class
 const {ROLE_ADMIN, ROLE_DOCTOR, ROLE_PATIENT, capitalize, getMessage, validateRole} = require('../utils.js');
-const network = require('../../medidapp/application-javascript/app.js');
+const network = require('../../fabric/medidapp/application-javascript/app.js');
 
 
 /**

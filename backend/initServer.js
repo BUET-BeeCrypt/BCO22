@@ -13,7 +13,7 @@ const redis = require('redis');
  */
 async function initLedger() {
   try {
-    const jsonString = fs.readFileSync('../medidapp/chaincode/lib/initLedger.json');
+    const jsonString = fs.readFileSync('../fabric/medidapp/chaincode/lib/initLedger.json');
     const patients = JSON.parse(jsonString);
     let i = 0;
     for (i = 0; i < patients.length; i++) {

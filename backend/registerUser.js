@@ -6,9 +6,9 @@
 const {Wallets} = require('fabric-network');
 const FabricCAServices = require('fabric-ca-client');
 const path = require('path');
-const {buildCAClient, registerAndEnrollUser} = require('../patient-asset-transfer/application-javascript/CAUtil.js');
-const walletPath = path.join(__dirname, '/../patient-asset-transfer/application-javascript/wallet');
-const {buildCCPHosp1, buildCCPHosp2, buildWallet, buildCCPHosp3} = require('../patient-asset-transfer/application-javascript/AppUtil.js');
+const {buildCAClient, registerAndEnrollUser} = require('../fabric/medidapp/application-javascript/CAUtil.js');
+const walletPath = path.join(__dirname, '../fabric/medidapp/application-javascript/wallet');
+const {buildCCPHosp1, buildCCPHosp2, buildWallet, buildCCPHosp3} = require('../fabric/medidapp/application-javascript/AppUtil.js');
 let mspOrg;
 let adminUserId;
 let caClient;
